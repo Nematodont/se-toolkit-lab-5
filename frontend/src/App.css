@@ -59,3 +59,55 @@ tr:nth-child(even) {
   padding: 0.25rem 0.75rem;
   font-size: 0.85rem;
 }
+
+/* Navigation tabs */
+
+.nav-tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-tabs button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #f0f0f0;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+  font-size: 1rem;
+}
+
+.nav-tabs button.active {
+  background: #fff;
+  border-bottom: 2px solid #fff;
+  font-weight: bold;
+}
+
+.nav-tabs button:hover:not(.active) {
+  background: #e0e0e0;
+}
+
+/* Dashboard grid */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.chart-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.chart-card h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.error {
+  color: #d32f2f;
+}
